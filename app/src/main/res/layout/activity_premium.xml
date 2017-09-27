@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/tvPremiumText"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_non_premium_user"
+            android:textColor="@color/gray9" />
+
+        <ImageView
+            android:id="@id/imgPremium"
+            style="@style/BigCenterImage"
+            android:contentDescription="@string/desc_imgListEmptyView"
+            android:src="@drawable/img_pro" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btnRestore"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_margin="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_orange"
+            android:text="@string/premium_btn_restore"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@id/btnPurchase"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_margin="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_green"
+            android:text="@string/premium_btn_purchase"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

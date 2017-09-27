@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/SettingsListItem">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="@string/settings_item1" style="@style/SettingsListItemTitle" />
+            <TextView android:id="@id/tvSubtitle1" android:text="@string/settings_item1_sub" style="@style/SettingsListItemSubtitle" />
+        </LinearLayout>
+        <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/SettingsListItemDivider" />
+    <LinearLayout style="@style/SettingsListItem">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="@string/settings_item2" style="@style/SettingsListItemTitle" />
+            <TextView android:id="@id/tvSubtitle2" android:text="@string/settings_item2_sub" style="@style/SettingsListItemSubtitle" />
+        </LinearLayout>
+        <CheckBox android:id="@id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

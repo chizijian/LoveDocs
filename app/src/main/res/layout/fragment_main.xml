@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lvDocsets" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/ListStyle" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:src="@drawable/img_list_empty_view" android:contentDescription="@string/desc_imgListEmptyView" style="@style/BigCenterImage" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bottomBar" style="@style/BottomBar">
+        <ImageButton android:id="@id/btnDocsets" android:src="@drawable/icon_docsets" android:layout_alignParentLeft="true" android:contentDescription="@string/desc_btnDocsets" style="@style/BottomBarIcon" />
+        <ImageButton android:id="@id/btnSettings" android:src="@drawable/icon_settings" android:layout_alignParentRight="true" android:contentDescription="@string/desc_btnSettings" style="@style/BottomBarIcon" />
+    </RelativeLayout>
+</LinearLayout>
